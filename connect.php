@@ -1,10 +1,13 @@
 <?php
+include "C:/wamp/www/api/database/database.php";
 
-    $serverName = "sqlsrv:Server=go.breakers.kiwi,55501";
-    //Establishes the connection
-    $conn = new pdo("sqlsrv:Server=go.breakers.kiwi,55501;Database=SWIFTPOS", "sa", "/LaCk4vU7hXW}}P\"C");
-    if($conn)
-        echo "Connected!";
-    else
-        echo "Not today";
+$config = array(
+    'db_type' => 'sqlsrv',
+    'db_host' => 'xxx.yyyyyyy.zzz',
+    'db_name' => 'TESTDB',
+    'db_username' => 'sa',
+    'db_password' => 'xxxyyyzzzzzzz'
+);
+
+$db = new MyDBConnection($config);
 ?>
