@@ -1,5 +1,5 @@
 <?php
-include "C:/wamp/www/api/database/database.php";
+include "./database/database.php";
 
 $config = array(
     'db_type' => 'sqlsrv',
